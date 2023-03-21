@@ -1,5 +1,5 @@
 const fetchBreedList = async ({ queryKey }) => {
-    const animal = queryKey[1];
+    const animal = queryKey[1].toLowerCase();
 
     if (!animal) return [];
 
